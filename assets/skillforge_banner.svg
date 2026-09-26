@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" width="100%" height="100%">
+  <defs>
+    <!-- Background Vignette -->
+    <radialGradient id="vignette-skillforge" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#161514" stop-opacity="0.85"/>
+      <stop offset="60%" stop-color="#0E0D0D" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#080808" stop-opacity="1"/>
+    </radialGradient>
+
+    <!-- Antique Gold Gradient -->
+    <linearGradient id="gold-forge" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3E5AB"/>
+      <stop offset="45%" stop-color="#C5A059"/>
+      <stop offset="100%" stop-color="#8F6B28"/>
+    </linearGradient>
+
+    <!-- Cyan Energy Accent -->
+    <linearGradient id="cyan-accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7DD3FC"/>
+      <stop offset="50%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+
+    <style>
+      .serif-title { font-family: 'Cinzel', 'Cormorant Garamond', 'Didot', 'Playfair Display', 'Baskerville', 'Georgia', serif; font-weight: 400; }
+      .serif-sub { font-family: 'Cormorant Garamond', 'Baskerville', 'Georgia', serif; font-style: italic; }
+      .mono-tech { font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace; }
+    </style>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="440" fill="#080808"/>
+  <rect width="1200" height="440" fill="url(#vignette-skillforge)"/>
+
+  <!-- Architectural Outer Frame -->
+  <rect x="24" y="24" width="1152" height="392" fill="none" stroke="#C5A059" stroke-width="0.75" stroke-opacity="0.35"/>
+  <rect x="28" y="28" width="1144" height="384" fill="none" stroke="#C5A059" stroke-width="0.5" stroke-dasharray="4,6" stroke-opacity="0.2"/>
+
+  <!-- Renaissance Corner Rosettes -->
+  <g stroke="#C5A059" stroke-width="0.8" opacity="0.6">
+    <path d="M20 24 h16 M24 20 v16"/>
+    <path d="M1180 24 h-16 M1176 20 v16"/>
+    <path d="M20 416 h16 M24 412 v16"/>
+    <path d="M1180 416 h-16 M1176 412 v16"/>
+    <circle cx="24" cy="24" r="3" fill="none"/>
+    <circle cx="1176" cy="24" r="3" fill="none"/>
+    <circle cx="24" cy="416" r="3" fill="none"/>
+    <circle cx="1176" cy="416" r="3" fill="none"/>
+  </g>
+
+  <!-- LEFT CLUSTER: Da Vinci Renaissance Blueprint (The 5-Tier Maturity Ladder & Prism) -->
+  <g transform="translate(225, 218)" stroke="#C5A059" fill="none">
+    <!-- Astrolabe Construction Arcs & Golden Spirals -->
+    <g stroke-width="0.4" stroke-opacity="0.16" stroke-dasharray="2,4">
+      <circle cx="0" cy="0" r="165"/>
+      <circle cx="0" cy="0" r="120"/>
+      <circle cx="0" cy="0" r="75"/>
+      <line x1="-185" y1="0" x2="185" y2="0"/>
+      <line x1="0" y1="-165" x2="0" y2="165"/>
+      <line x1="-130" y1="-130" x2="130" y2="130"/>
+      <line x1="-130" y1="130" x2="130" y2="-130"/>
+    </g>
+
+    <!-- Top Coordinate Annotation -->
+    <text x="0" y="-120" fill="#C5A059" font-size="8" text-anchor="middle" class="mono-tech" opacity="0.55">
+      FIG. I — 5-TIER SKILL MATURITY LADDER [0-100 XP EVALUATION]
+    </text>
+
+    <!-- The 5 Maturity Tiers Stack (Ascending Pyramid Ladder) -->
+    <!-- Tier 5: Autonomous Master (Apex) -->
+    <g transform="translate(0, -95)">
+      <polygon points="0,-18 36,0 0,18 -36,0" stroke="url(#gold-forge)" stroke-width="1.2" fill="#181613" fill-opacity="0.9"/>
+      <circle cx="0" cy="0" r="3" fill="#F3E5AB"/>
+      <text x="48" y="4" fill="#F3E5AB" font-size="8" class="mono-tech">L5: AUTONOMOUS [85-100 XP]</text>
+    </g>
+
+    <!-- Tier 4: Self-Verifying Expert -->
+    <g transform="translate(0, -52)">
+      <polygon points="0,-16 58,0 0,16 -58,0" stroke="#C5A059" stroke-width="0.9" fill="#141311" fill-opacity="0.85"/>
+      <line x1="-40" y1="0" x2="40" y2="0" stroke="#C5A059" stroke-width="0.5" stroke-dasharray="2,2"/>
+      <text x="70" y="4" fill="#C5A059" font-size="8" class="mono-tech">L4: SELF-VERIFYING [65-84 XP]</text>
+    </g>
+
+    <!-- Tier 3: Tool-Backed Adept -->
+    <g transform="translate(0, -10)">
+      <polygon points="0,-16 80,0 0,16 -80,0" stroke="#C5A059" stroke-width="0.8" fill="#121110" fill-opacity="0.8"/>
+      <text x="92" y="4" fill="#C5A059" font-size="8" class="mono-tech">L3: TOOL-BACKED [40-64 XP]</text>
+    </g>
+
+    <!-- Tier 2: Structured Standard -->
+    <g transform="translate(0, 32)">
+      <polygon points="0,-16 102,0 0,16 -102,0" stroke="#C5A059" stroke-width="0.7" fill="#100F0E" fill-opacity="0.75"/>
+      <text x="114" y="4" fill="#A89265" font-size="8" class="mono-tech">L2: STRUCTURED [25-39 XP]</text>
+    </g>
+
+    <!-- Tier 1: Novice Promptlet (Base) -->
+    <g transform="translate(0, 74)">
+      <polygon points="0,-16 124,0 0,16 -124,0" stroke="#C5A059" stroke-width="0.6" stroke-dasharray="3,3" fill="#0C0B0A" fill-opacity="0.7"/>
+      <text x="136" y="4" fill="#7D6B49" font-size="8" class="mono-tech">L1: PROMPTLET [0-24 XP]</text>
+    </g>
+
+    <!-- Central Energy Axis Line -->
+    <line x1="0" y1="-105" x2="0" y2="85" stroke="url(#cyan-accent)" stroke-width="0.8" stroke-dasharray="2,4" opacity="0.65"/>
+
+    <!-- Da Vinci Dimension Lines & Annotations -->
+    <g stroke="#C5A059" stroke-width="0.5" opacity="0.6">
+      <!-- Left Height Dimension -->
+      <line x1="-140" y1="-95" x2="-140" y2="74"/>
+      <line x1="-145" y1="-95" x2="-135" y2="-95"/>
+      <line x1="-145" y1="74" x2="-135" y2="74"/>
+      <text x="-150" y="-8" fill="#C5A059" font-size="7" text-anchor="end" class="mono-tech">100-PT XP SCALE (Φ)</text>
+
+      <!-- Bottom Dimension -->
+      <line x1="-124" y1="102" x2="124" y2="102"/>
+      <line x1="-124" y1="98" x2="-124" y2="106"/>
+      <line x1="124" y1="98" x2="124" y2="106"/>
+      <text x="0" y="114" fill="#C5A059" font-size="7" text-anchor="middle" class="mono-tech">UNIVERSAL TAXONOMY: 10 DOMAINS</text>
+    </g>
+
+    <!-- Bottom Technical Notes -->
+    <text x="-165" y="142" fill="#C5A059" opacity="0.45" font-size="8" class="mono-tech">
+      ZERO RUNTIME DEPENDENCIES • PURE STANDARD LIB
+    </text>
+  </g>
+
+  <!-- RIGHT CLUSTER: Editorial Presentation & Typography -->
+  <g transform="translate(490, 0)">
+    <!-- Supertitle -->
+    <text x="0" y="130" fill="#C5A059" font-size="11" letter-spacing="4" class="serif-title" opacity="0.85">
+      AUTONOMOUS AGENT GOVERNANCE • ANNO MMXXVI
+    </text>
+
+    <!-- Main Title: SKILLFORGE -->
+    <text x="0" y="192" fill="#FDFBF7" font-size="52" letter-spacing="14" class="serif-title">
+      S K I L L F O R G E
+    </text>
+
+    <!-- Bohemian Divider with Gold Accent Rosette -->
+    <g transform="translate(0, 218)" stroke="#C5A059" opacity="0.6">
+      <line x1="0" y1="0" x2="430" y2="0" stroke-width="0.8"/>
+      <circle cx="215" cy="0" r="3" fill="#C5A059"/>
+      <circle cx="108" cy="0" r="1.5" fill="#C5A059"/>
+      <circle cx="322" cy="0" r="1.5" fill="#C5A059"/>
+    </g>
+
+    <!-- Subtitle -->
+    <text x="0" y="254" fill="#C5BEB3" font-size="14" letter-spacing="2" class="serif-title" opacity="0.95">
+      AI AGENT SKILL LEVELING &amp; UNIVERSAL TAXONOMY ENGINE
+    </text>
+
+    <!-- Sub-prose Editorial -->
+    <text x="0" y="284" fill="#8C857B" font-size="13" class="serif-sub">
+      Empirical 5-tier maturity grading, 10-domain taxonomy classification,
+    </text>
+    <text x="0" y="304" fill="#8C857B" font-size="13" class="serif-sub">
+      and automated code scaffolding to eliminate capability mirages.
+    </text>
+
+    <!-- Technical KPI Badges -->
+    <g transform="translate(0, 332)">
+      <!-- Badge 1: 5 Tiers -->
+      <rect x="0" y="0" width="125" height="25" rx="2" fill="#151311" stroke="#C5A059" stroke-width="0.6" stroke-opacity="0.45"/>
+      <text x="62" y="17" fill="#C5A059" font-size="9" text-anchor="middle" class="mono-tech">5 MATURITY TIERS</text>
+
+      <!-- Badge 2: 10 Domains -->
+      <rect x="135" y="0" width="130" height="25" rx="2" fill="#151311" stroke="#C5A059" stroke-width="0.6" stroke-opacity="0.45"/>
+      <text x="200" y="17" fill="#C5A059" font-size="9" text-anchor="middle" class="mono-tech">10 TAXONOMY DOMAINS</text>
+
+      <!-- Badge 3: Zero Dependencies -->
+      <rect x="275" y="0" width="145" height="25" rx="2" fill="#151311" stroke="#C5A059" stroke-width="0.6" stroke-opacity="0.45"/>
+      <text x="347" y="17" fill="#C5A059" font-size="9" text-anchor="middle" class="mono-tech">ZERO RUNTIME DEP</text>
+    </g>
+
+    <!-- Colophon Footnote -->
+    <text x="0" y="388" fill="#5C564E" font-size="8" letter-spacing="2" class="mono-tech">
+      ENGINEERED FOR AGENTIC RIGOR • NOTCH INSPIRED • OPEN ATELIER
+    </text>
+  </g>
+</svg>

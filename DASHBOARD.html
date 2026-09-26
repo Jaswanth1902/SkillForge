@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SkillForge Dashboard</title>
+  <style>
+    :root {
+      --bg: #0B0B0D;
+      --card-bg: #141418;
+      --border: #22222A;
+      --text: #EDEDED;
+      --text-muted: #8E8D96;
+      --gold: #C5A059;
+      --cyan: #38BDF8;
+      --emerald: #10B981;
+    }
+    body {
+      margin: 0;
+      padding: 32px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 20px;
+      margin-bottom: 28px;
+    }
+    .title h1 { margin: 0; font-size: 26px; font-weight: 700; color: #FFF; }
+    .title p { margin: 6px 0 0 0; color: var(--text-muted); font-size: 14px; }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+    .stat-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 18px;
+      transition: transform 0.15s ease;
+    }
+    .stat-card:hover { transform: translateY(-2px); }
+    .stat-val { font-size: 32px; font-weight: 700; color: var(--gold); }
+    .stat-label { font-size: 13px; color: var(--text-muted); margin-top: 4px; }
+    .skill-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--card-bg);
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+    th, td {
+      padding: 14px 18px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+      font-size: 14px;
+    }
+    th { background: #18181E; color: var(--text-muted); font-weight: 600; }
+    tr:hover td { background: #1B1B22; }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      border: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="title">
+      <h1>🛡️ SkillForge Intelligence Dashboard</h1>
+      <p>Autonomous AI Agent Skill Leveling & Taxonomy Engine</p>
+    </div>
+  </div>
+
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-val">24</div>
+      <div class="stat-label">Total Skills Indexed</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-val">34.2</div>
+      <div class="stat-label">Average Maturity XP (0-100)</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-val">0</div>
+      <div class="stat-label">Production Grade (L4 & L5)</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-val">9</div>
+      <div class="stat-label">Active Taxonomy Domains</div>
+    </div>
+  </div>
+
+  <table class="skill-table">
+    <thead>
+      <tr>
+        <th>Skill Name</th>
+        <th>Maturity Tier</th>
+        <th>XP Score</th>
+        <th>Domain</th>
+        <th>Risk Profile</th>
+        <th>Scripts</th>
+        <th>Tests</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>task-observer</strong></td><td><span class='badge'>🥇 L3-TOOL-BACKED</span></td><td>62 XP</td><td><code>workflow-productivity</code></td><td>SAFE</td><td>2</td><td>0</td></tr><tr><td><strong>systematic-debugging</strong></td><td><span class='badge'>🥈 L2-STANDARD</span></td><td>50 XP</td><td><code>software-engineering</code></td><td>SAFE</td><td>0</td><td>0</td></tr><tr><td><strong>research</strong></td><td><span class='badge'>🥈 L2-STANDARD</span></td><td>48 XP</td><td><code>research-analysis</code></td><td>HIGH</td><td>0</td><td>0</td></tr><tr><td><strong>insta-bot</strong></td><td><span class='badge'>🥈 L2-STANDARD</span></td><td>46 XP</td><td><code>agent-architecture</code></td><td>SAFE</td><td>0</td><td>0</td></tr><tr><td><strong>jev-gate</strong></td><td><span class='badge'>🥈 L2-STANDARD</span></td><td>41 XP</td><td><code>software-engineering</code></td><td>HIGH</td><td>0</td><td>0</td></tr><tr><td><strong>scrapling</strong></td><td><span class='badge'>🥈 L2-STANDARD</span></td><td>40 XP</td><td><code>web-harvesting</code></td><td>HIGH</td><td>0</td><td>0</td></tr><tr><td><strong>agent-council</strong></td><td><span class='badge'>🥈 L2-STANDARD</span></td><td>38 XP</td><td><code>agent-architecture</code></td><td>HIGH</td><td>0</td><td>0</td></tr><tr><td><strong>telegram-bridge</strong></td><td><span class='badge'>🥈 L2-STANDARD</span></td><td>38 XP</td><td><code>workflow-productivity</code></td><td>HIGH</td><td>0</td><td>0</td></tr><tr><td><strong>test-driven-development</strong></td><td><span class='badge'>🥈 L2-STANDARD</span></td><td>37 XP</td><td><code>software-engineering</code></td><td>LOW</td><td>0</td><td>0</td></tr><tr><td><strong>graft</strong></td><td><span class='badge'>🥈 L2-STANDARD</span></td><td>36 XP</td><td><code>software-engineering</code></td><td>MEDIUM</td><td>0</td><td>0</td></tr><tr><td><strong>notebooklm-bridge</strong></td><td><span class='badge'>🥈 L2-STANDARD</span></td><td>36 XP</td><td><code>research-analysis</code></td><td>HIGH</td><td>0</td><td>0</td></tr><tr><td><strong>genesis-inception</strong></td><td><span class='badge'>🥈 L2-STANDARD</span></td><td>35 XP</td><td><code>agent-architecture</code></td><td>LOW</td><td>0</td><td>0</td></tr><tr><td><strong>linkedin-growth</strong></td><td><span class='badge'>🥈 L2-STANDARD</span></td><td>35 XP</td><td><code>workflow-productivity</code></td><td>HIGH</td><td>0</td><td>0</td></tr><tr><td><strong>ui-ux-pro-max</strong></td><td><span class='badge'>🥈 L2-STANDARD</span></td><td>31 XP</td><td><code>ui-ux-craft</code></td><td>LOW</td><td>0</td><td>0</td></tr><tr><td><strong>omniroute-compression</strong></td><td><span class='badge'>🥈 L2-STANDARD</span></td><td>30 XP</td><td><code>security-sandbox</code></td><td>HIGH</td><td>0</td><td>0</td></tr><tr><td><strong>auto-architect</strong></td><td><span class='badge'>🥈 L2-STANDARD</span></td><td>28 XP</td><td><code>agent-architecture</code></td><td>SAFE</td><td>0</td><td>0</td></tr><tr><td><strong>mirofish_666ghj_multi_agent_swarm_simulation</strong></td><td><span class='badge'>🥈 L2-STANDARD</span></td><td>28 XP</td><td><code>agent-architecture</code></td><td>LOW</td><td>0</td><td>0</td></tr><tr><td><strong>report-generator</strong></td><td><span class='badge'>🥈 L2-STANDARD</span></td><td>28 XP</td><td><code>research-analysis</code></td><td>LOW</td><td>0</td><td>0</td></tr><tr><td><strong>code-architecture</strong></td><td><span class='badge'>🥈 L2-STANDARD</span></td><td>25 XP</td><td><code>software-engineering</code></td><td>LOW</td><td>0</td><td>0</td></tr><tr><td><strong>service-orchestration</strong></td><td><span class='badge'>🥈 L2-STANDARD</span></td><td>25 XP</td><td><code>devops-platform</code></td><td>SAFE</td><td>0</td><td>0</td></tr><tr><td><strong>ast_grep_uv_sqlite_vec_camoufox_agentic_tooling</strong></td><td><span class='badge'>🥉 L1-PROMPTLET</span></td><td>23 XP</td><td><code>data-knowledge</code></td><td>LOW</td><td>0</td><td>0</td></tr><tr><td><strong>anti-slop</strong></td><td><span class='badge'>🥉 L1-PROMPTLET</span></td><td>20 XP</td><td><code>ui-ux-craft</code></td><td>CRITICAL</td><td>0</td><td>0</td></tr><tr><td><strong>impeccable</strong></td><td><span class='badge'>🥉 L1-PROMPTLET</span></td><td>20 XP</td><td><code>ui-ux-craft</code></td><td>CRITICAL</td><td>0</td><td>0</td></tr><tr><td><strong>security-linting</strong></td><td><span class='badge'>🥉 L1-PROMPTLET</span></td><td>20 XP</td><td><code>security-sandbox</code></td><td>HIGH</td><td>0</td><td>0</td></tr>
+    </tbody>
+  </table>
+</body>
+</html>
